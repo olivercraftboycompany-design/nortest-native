@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/nArt"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="Album art"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/nTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:textColor="#FFFFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nArtist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:textColor="#FFAAAAAA"
+        android:textSize="15sp" />
+
+    <SeekBar
+        android:id="@+id/nSeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nPos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#FFAAAAAA"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/nDur"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="#FFAAAAAA"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/nShuffle"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Shuffle"
+            android:src="@drawable/ic_shuffle" />
+
+        <ImageButton
+            android:id="@+id/nPrev"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="18dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Previous"
+            android:src="@drawable/ic_prev" />
+
+        <ImageButton
+            android:id="@+id/nPlay"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="18dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Play or pause"
+            android:src="@drawable/ic_play" />
+
+        <ImageButton
+            android:id="@+id/nNext"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="18dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Next"
+            android:src="@drawable/ic_next" />
+
+        <ImageButton
+            android:id="@+id/nRepeat"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="18dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Repeat"
+            android:src="@drawable/ic_repeat" />
+    </LinearLayout>
+</LinearLayout>
